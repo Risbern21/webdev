@@ -1,0 +1,72 @@
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.alignitems-center {
+  align-items: center;
+}
+.bg-black {
+  background-color: #121212;
+  color: white;
+}
+.invert {
+  filter: invert(1);
+}
+.borderad {
+  border-radius: 5px;
+}
+.m1 {
+  margin: 0px 7px;
+}
+.m2-0 {
+  margin: 9px 19.5px;
+}
+.m2 {
+  margin-top: 18px;
+}
+.m10 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.buttonrad {
+  border-radius: 14px;
+}
+.flexcolumn {
+  flex-direction: column;
+}
+.maingap{
+  gap:8px;
+}
+.gap {
+  gap: 10px;
+}
+.smal {
+  font-size: small;
+}
+.small {
+  font-size: x-small;
+  color: gray;
+}
+.xsmall {
+  font-size: xx-small;
+}
+.imgwidth {
+  width: 15px;
+}
+.spacebetween {
+  justify-content: space-between;
+}
+.cardwidth {
+  width: 95%;
+}
+.gradborder {
+  background: linear-gradient(#121212, #121212) padding-box,
+    linear-gradient(to right, purple, aqua) border-box;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+.relative{
+  position: relative;
+}

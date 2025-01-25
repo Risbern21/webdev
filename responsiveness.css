@@ -1,0 +1,77 @@
+@media (max-width: 1250px) {
+  .left {
+    position: absolute;
+    left: -120%;
+    gap:7px;
+    transition: all 0.5s;
+    z-index: 3;
+    height: 90vh !important;
+    width: auto !important;
+  }
+  .right {
+    width: 100%;
+    height: 90vh;
+    padding: 0px 5px;
+  }
+  .cardcontainer{
+    justify-content: center;
+    overflow-y: auto;
+    gap:15px !important;
+  }
+  .card{
+    width:44vw !important;
+    height: 10% !important;
+    padding-bottom: 12px;
+  }
+  .hamburger {
+    display: inline;
+    cursor: pointer;
+  }
+  .playbarcontainer {
+    top: 6px;
+    font-size: 1.5vw;
+  }
+  .close {
+    display: inline;
+  }
+}
+@media(max-width:500px) {
+  .playbar{
+    width:94vw !important;
+  }
+  .seekbar{
+    width:90vw !important;
+  }
+  .card{
+    width: 80vw !important;
+  }
+}
+@media (max-width:330px) {
+  .left{
+    left:-200%;
+  }
+  .lol{
+    padding:5px 15px !important;
+  }
+  .lol h2{
+    font-size: small !important;
+  }
+  .info{
+    flex-direction: column;
+  }
+  .songtime{
+    font-size: 10px;
+  }
+  .volume img,input{
+    height:20px;
+  }
+  .songinfo{
+    width:30% !important;
+    font-size: 10px;
+  }
+  .fbutton{
+    padding: 6px 11px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

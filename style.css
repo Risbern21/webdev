@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: black;
+}
+
+.main {
+  margin-top: 5px;
+  position: relative;
+  height: 90vh;
+}
+.left {
+  width: 25vw;
+  border-radius: 10px;
+  gap: 5px;
+  height: 100%;
+}
+.right {
+  width: 75vw;
+  height: 99.78%;
+  padding-right: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+  gap: 7px;
+  position: relative;
+}
+.home {
+  margin: 5px 5px;
+  padding: 5px 15px;
+}
+.close {
+  display: none;
+}
+.logo img {
+  width: 23px;
+  cursor: pointer;
+}
+.home ul {
+  list-style: none;
+}
+.home ul li {
+  width: 19px;
+  gap: 15px;
+}
+.library {
+  height: 86%;
+  gap:20px;
+}
+.library .lnav {
+  justify-content: space-between;
+  padding: 5px 10px;
+  color: gray;
+}
+.library .lright {
+  gap: 10px;
+}
+.library .lright img {
+  width: 19px;
+}
+.library .lleft img {
+  width: 12px;
+}
+.lright span {
+  font-size: 14px;
+}
+.library .upper {
+  padding: 10px 0px;
+  height: 30vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 8px;
+}
+.library .upper .uppercard {
+  background-color: #1f1f1f;
+  width: 18rem;
+  margin: auto;
+  padding: 8px 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+.library .upper div {
+  font-weight: lighter;
+}
+.songs {
+  font-size: small;
+  padding-left: 15px;
+  width: 90%;
+}
+.songs ul {
+  list-style: none;
+  font-weight: 600;
+}
+.songs ul li {
+  background-color: #1f1f1f;
+  padding: 8px;
+  cursor: pointer;
+}
+button {
+  font-weight: 800;
+  font-size: 10px;
+  padding: 6px 12px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  cursor: pointer;
+  transition: hover 1s ease-in-out;
+}
+button:hover {
+  transform: scale(1.05);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #888888b0;
+}
+
+.library .lower ul {
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  list-style: none;
+  padding: 0px 20px;
+}
+.library .lower ul li a {
+  color: gray;
+  text-decoration: none;
+}
+.cookies {
+  font-weight: 600;
+}
+.language {
+  border: 1px solid rgb(77 77 77);
+  font-size: 10px;
+  font-weight: 800;
+  width: 80px;
+  padding: 5px 8px;
+}
+.rnav {
+  justify-content: space-between;
+}
+.hamburger {
+  display: none;
+}
+.rnav .rnavbtn {
+  border-radius: 21px;
+}
+.rnav #su {
+  background-color: transparent;
+  color: gray;
+}
+.rnav #su:hover {
+  color: white;
+}
+.right .spotifyplaylists {
+  padding: 5px 5px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.right .spotifyplaylists .lol {
+  padding: 10px 15px;
+}
+.right .spotifyplaylists h6 {
+  color: gray;
+}
+.right .spotifyplaylists .cardcontainer {
+  padding: 2px;
+  padding-left: 10px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+.right .spotifyplaylists .cardcontainer .card {
+  width: 120px;
+  height: 200px;
+  padding-left: 7px;
+  padding-right: 1px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: #282828;
+  .playbutton {
+    opacity: 1 !important;
+    bottom: 3%;
+    right: 9%;
+  }
+}
+.playbutton {
+  position: absolute;
+  z-index: 5;
+  bottom: -3%;
+  right: 9%;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  width: 35px;
+}
+
+.playbarcontainer {
+  position: relative;
+  top: 7px;
+  font-size: small;
+  margin: 0px 7px;
+}
+.info {
+  width: 100%;
+  justify-content: space-around;
+}
+.playbar {
+  width: 99vw;
+  color: white;
+  padding: 8px;
+}
+.playbar .songinfo {
+  text-align: center;
+  width: 20%;
+  word-break: break-all;
+}
+.variable {
+  height: 50px;
+}
+.playbar .volume {
+  width: 100px;
+  cursor: pointer;
+}
+#range {
+  width: 60px;
+}
+.playbar .controls img {
+  cursor: pointer;
+}
+.seekbar {
+  height: 5px;
+  border-radius: 3px;
+  width: 96vw;
+  background-color: white;
+  cursor: pointer;
+}
+.seekbar .circle {
+  height: 10px;
+  border-radius: 13px;
+  background-color: black;
+  width: 10px;
+  border: 2px solid rgb(0, 255, 251);
+  position: relative;
+  top: -4px;
+  transition: hover 2s ease, left 0.5s;
+  left: 0%;
+  cursor: pointer;
+}
+.seekbar .circle:hover {
+  scale: 1.1;
+}
+.fbutton {
+  padding: 12px 21px;
+  border-radius: 21px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

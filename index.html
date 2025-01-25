@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rizzify - Web player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="responsiveness.css" />
+  </head>
+  <body>
+    <div class="main flex">
+      <div class="left flex flexcolumn">
+        <div class="home bg-black borderad m1">
+          <div class="logo flex spacebetween">
+            <img src="svgs/logo.svg" alt="logo" class="invert" />
+            <img class="close" src="svgs/close.svg" alt="X" />
+          </div>
+          <ul>
+            <li class="flex alignitems-center m10">
+              <img src="svgs/homeicon.svg" alt="Home" class="invert" />Home
+            </li>
+            <li class="flex alignitems-center m10">
+              <img src="svgs/search.svg" alt="search" class="invert" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-black borderad m1 flex flexcolumn">
+          <div class="flex lnav alignitems-center">
+            <div class="lright flex alignitems-center">
+              <img src="svgs/library.svg" alt="lib" class="invert" />
+              <span>Your Library</span>
+            </div>
+            <div class="lleft">
+              <img src="svgs/plus.svg" alt="plus" class="invert" />
+            </div>
+          </div>
+          <div class="upper flex flexcolumn gap" onscroll="libraryscroll()">
+            <!-- <div class="uppercard borderad flex">
+              <h5>Create your first playlist</h5>
+              <h6>It's easy we'll help you</h6>
+              <div class="button">
+                <button class="buttonrad">Create playlist</button>
+              </div>
+            </div>
+            <div class="uppercard borderad flex">
+              <h5>Let's find some podcasts to follow</h5>
+              <h6>Wel'l keep you updated on new episodes</h6>
+              <div class="button">
+                <button class="buttonrad">Browse podcasts</button>
+              </div>
+            </div> -->
+            <div class="songs">
+              <div class="holder flex alignitems-center">
+                <img src="svgs/music.svg" alt="" />
+                <div>Music</div>
+              </div>
+              <ul class="flex flexcolumn gap"></ul>
+            </div>
+          </div>
+          <div class="lower m2">
+            <ul class="flex xsmall">
+              <li>
+                <a href="https://www.spotify.com/in-en/legal/" id="">
+                  <span>Legal</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.spotify.com/in-en/safetyandprivacy/" id="">
+                  <span>Safety &amp; Privacy Center</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                  id=""
+                >
+                  <span>Privacy Policy</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                  id=""
+                >
+                  <span>Cookies</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                  id=""
+                >
+                  <span>About Ads</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.spotify.com/in-en/accessibility/" id="">
+                  <span>Accessibility</span>
+                </a>
+              </li>
+            </ul>
+            <div class="cookies xsmall m2-0 m1">Cookies</div>
+            <button
+              class="language flex invert m2-0 m1 buttonrad justify-center alignitems-center"
+            >
+              <img
+                class="imgwidth"
+                src="svgs/language.svg"
+                alt="worldlogo"
+              /><span>English</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="right flex flexcolumn">
+        <div class="rnav bg-black borderad flex alignitems-center">
+          <div>
+            <img class="hamburger" src="svgs/hamburger.svg" alt="hamburger" />
+            <img src="svgs/left.svg" alt="left" />
+            <img src="svgs/right.svg" alt="right" />
+          </div>
+          <div>
+            <button class="buttonrad fbutton rnavbtn" id="su">Sign up</button>
+            <button class="buttonrad fbutton rnavbtn">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyplaylists bg-black borderad">
+          <div class="lol flex spacebetween alignitems-center">
+            <h2>Spotify Playlists</h2>
+            <h6>Show all</h6>
+          </div>
+          <div class="cardcontainer flex alignitems-center"></div>
+        </div>
+      </div>
+    </div>
+    <div class="playbarcontainer flex alignitems-center justify-center">
+      <div class="playbar gradborder flex alignitems-center flexcolumn">
+        <div class="info flex alignitems-center">
+          <div class="songinfo flex alignitems-center">
+            Choose a Song to play
+          </div>
+          <div class="controls">
+            <img id="previous" src="svgs/back.svg" alt="back" />
+            <img id="play" src="svgs/play.svg" alt="playpause" />
+            <img id="next" src="svgs/forward.svg" alt="forward" />
+          </div>
+          <div class="volume flex alignitems-center gap">
+            <img src="svgs/volume.svg" class="volbutton" alt="volumerocker" />
+            <input type="range" name="range" value="100" id="range" />
+          </div>
+        </div>
+        <div
+          class="variable flex flexcolumn justify-center alignitems-center gap"
+        >
+          <div class="songtime">00:00/00:00</div>
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
